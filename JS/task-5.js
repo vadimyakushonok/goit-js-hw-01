@@ -1,10 +1,10 @@
 const contryName = prompt ('Введите название страны для расчета стоимости доставки');
 
-const China = 'Китай';
-const Chili = 'Чили';
-const Australia = 'Австралия';
-const India = 'Индия';
-const Jamaica = 'Ямайка';
+const CHINA = 'Китай';
+const CHILI = 'Чили';
+const AUSTRALIA = 'Австралия';
+const INDIA = 'Индия';
+const JAMAICA = 'Ямайка';
 
 let message;
 let price;
@@ -12,30 +12,29 @@ let country;
 
 const cancelByUser = 'Отменено пользователем!';
 const noDelivery = 'В вашей стране доставка не доступна';
-/* const orderCompleted = `Доставка в ${contry} будет стоить ${price} кредитов`; */
 
 if (contryName === null) {
     alert(cancelByUser);
 } else { 
     country = contryName[0].toUpperCase() + contryName.slice(1).toLowerCase(); 
     switch (country) {
-            case China:
+            case CHINA:
                 price = 100;
                 break;
     
-            case Chili:
+            case CHILI:
                 price = 250;
                 break;
     
-            case Australia:
+            case AUSTRALIA:
                 price = 170;
                 break;
     
-            case India:
+            case INDIA:
                 price = 80;
                 break;
     
-            case Jamaica:
+            case JAMAICA:
                 price = 120;
                 break;
                 
